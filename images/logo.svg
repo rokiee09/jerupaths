@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Kubbe ve Bina -->
+    <g id="dome-building" transform="translate(300, 100) scale(2.5)">
+        <!-- Ana bina yapısı -->
+        <path d="M100 150 h200 v60 h-200 v-60" fill="#E8E4D0" stroke="#1A1A40" stroke-width="2"/>
+        
+        <!-- Kemerler -->
+        <path d="M110 170 h20 v30 h-20 v-30 M140 170 h20 v30 h-20 v-30 M170 170 h60 v30 h-60 v-30 M240 170 h20 v30 h-20 v-30 M270 170 h20 v30 h-20 v-30" 
+              fill="#D4C8A8" stroke="#1A1A40" stroke-width="1"/>
+        
+        <!-- Üst platform -->
+        <rect x="120" y="130" width="160" height="20" fill="#E8E4D0" stroke="#1A1A40" stroke-width="2"/>
+        
+        <!-- Kubbe -->
+        <path d="M140 60 C140 130, 260 130, 260 60 A60 60 0 0 0 140 60" fill="#FFD700" stroke="#1A1A40" stroke-width="2"/>
+        
+        <!-- Kubbenin tepesi -->
+        <path d="M195 30 L200 10 L205 30 L200 40 Z" fill="#FFD700" stroke="#1A1A40" stroke-width="1"/>
+    </g>
+    
+    <!-- Logo Yazısı -->
+    <g id="text" transform="translate(0, 700)">
+        <text font-family="Georgia, serif" font-size="96" font-weight="bold" fill="#1A1A40" text-anchor="middle" x="600">
+            PilgrimPass
+        </text>
+        <text font-family="Georgia, serif" font-size="48" fill="#1A1A40" text-anchor="middle" x="600" y="70">
+            Walk Your Path in Jerusalem
+        </text>
+    </g>
+</svg>

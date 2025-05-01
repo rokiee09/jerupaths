@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Guides - PilgrimPass</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="PilgrimPass Logo">
+                    JeruPath
+                </a>
+                <button class="mobile-menu-btn">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="holy-sites.html">Holy Sites</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="guide.html" class="active">Guide</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li>
+                        <div class="cart-icon" id="cartIcon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-total">
+            <div class="cart-total-row">
+                <span>Subtotal:</span>
+                <span id="cartSubtotal">$0</span>
+            </div>
+            <div class="cart-total-row">
+                <span>Days:</span>
+                <span id="cartDays">0</span>
+            </div>
+            <div class="cart-total-row total">
+                <span>Total:</span>
+                <span id="cartTotal">$0</span>
+            </div>
+            <a href="#" class="checkout-btn">Proceed to Checkout</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="guides-hero">
+            <div class="container">
+                <h1>Our Expert Guides</h1>
+                <p>Meet our experienced guides who will make your pilgrimage journey meaningful and memorable</p>
+            </div>
+        </section>
+
+        <section class="guides-grid">
+            <div class="container">
+                <div class="guide-cards">
+                    <!-- Guide 1 -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="images/guide-ahmed.jpg" alt="Ahmed - Islamic Heritage Guide">
+                        </div>
+                        <div class="package-header">
+                            <h2>Ahmed Hassan</h2>
+                            <div class="price">$50</div>
+                            <div class="price-per-day">per day</div>
+                        </div>
+                        <div class="package-content">
+                            <div class="guide-experience">
+                                <span class="years">15+ Years Experience</span>
+                                <span class="tours">1000+ Tours</span>
+                            </div>
+                            <ul class="package-features">
+                                <li>✓ Al-Aqsa History</li>
+                                <li>✓ Dome of the Rock</li>
+                                <li>✓ Islamic Architecture</li>
+                                <li>✓ Arabic & English</li>
+                                <li>✓ Holy Sites</li>
+                            </ul>
+                            <div class="package-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating">4.9</span>
+                                <span class="reviews">(245 reviews)</span>
+                            </div>
+                            <div class="date-picker-container">
+                                <label for="date-1">Select Dates:</label>
+                                <input type="text" id="date-1" class="date-picker" placeholder="Select dates" data-guide-id="1">
+                            </div>
+                            <button class="btn btn-primary add-to-cart" data-guide-id="1" data-guide-name="Ahmed Hassan" data-guide-price="50" data-guide-image="images/guide-ahmed.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Guide 2 -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="images/guide-michael.jpg" alt="Michael - Christian Heritage Guide">
+                        </div>
+                        <div class="package-header">
+                            <h2>Michael Cohen</h2>
+                            <div class="price">$50</div>
+                            <div class="price-per-day">per day</div>
+                        </div>
+                        <div class="package-content">
+                            <div class="guide-experience">
+                                <span class="years">12+ Years Experience</span>
+                                <span class="tours">800+ Tours</span>
+                            </div>
+                            <ul class="package-features">
+                                <li>✓ Via Dolorosa</li>
+                                <li>✓ Church of Holy Sepulchre</li>
+                                <li>✓ Christian History</li>
+                                <li>✓ Hebrew & English</li>
+                                <li>✓ Holy Sites</li>
+                            </ul>
+                            <div class="package-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating">4.8</span>
+                                <span class="reviews">(198 reviews)</span>
+                            </div>
+                            <div class="date-picker-container">
+                                <label for="date-2">Select Dates:</label>
+                                <input type="text" id="date-2" class="date-picker" placeholder="Select dates" data-guide-id="2">
+                            </div>
+                            <button class="btn btn-primary add-to-cart" data-guide-id="2" data-guide-name="Michael Cohen" data-guide-price="50" data-guide-image="images/guide-michael.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Guide 3 -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="images/guide-sarah.jpg" alt="Sarah - Complete Heritage Guide">
+                        </div>
+                        <div class="package-header">
+                            <h2>Sarah Goldstein</h2>
+                            <div class="price">$50</div>
+                            <div class="price-per-day">per day</div>
+                        </div>
+                        <div class="package-content">
+                            <div class="guide-experience">
+                                <span class="years">10+ Years Experience</span>
+                                <span class="tours">600+ Tours</span>
+                            </div>
+                            <ul class="package-features">
+                                <li>✓ All Holy Sites</li>
+                                <li>✓ Archaeology</li>
+                                <li>✓ Religious History</li>
+                                <li>✓ Hebrew & Arabic & English</li>
+                                <li>✓ Private Tours</li>
+                            </ul>
+                            <div class="package-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating">4.9</span>
+                                <span class="reviews">(167 reviews)</span>
+                            </div>
+                            <div class="date-picker-container">
+                                <label for="date-3">Select Dates:</label>
+                                <input type="text" id="date-3" class="date-picker" placeholder="Select dates" data-guide-id="3">
+                            </div>
+                            <button class="btn btn-primary add-to-cart" data-guide-id="3" data-guide-name="Sarah Goldstein" data-guide-price="50" data-guide-image="images/guide-sarah.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JeruPath</h3>
+                    <p>Your guide to Jerusalem's holy sites</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="holy-sites.html">Holy Sites</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="guide.html">Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: info@JeruPath.com</li>
+                        <li>Phone: +972 2 123 4567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JeruPath. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="cart.js"></script>
+</body>
+</html> 

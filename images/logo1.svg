@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Kubbe şekli -->
+    <path d="M20 4C11.716 4 5 10.716 5 19C5 27.284 11.716 34 20 34C28.284 34 35 27.284 35 19C35 10.716 28.284 4 20 4Z" fill="#D4AF37"/>
+    
+    <!-- Haç -->
+    <path d="M20 8V30" stroke="#1A1A40" stroke-width="2"/>
+    <path d="M12 19H28" stroke="#1A1A40" stroke-width="2"/>
+    
+    <!-- Hilal -->
+    <path d="M25 12C25 12 28 15 28 19C28 23 25 26 25 26C25 26 22 23 22 19C22 15 25 12 25 12Z" fill="#1A1A40"/>
+</svg>
