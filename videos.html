@@ -10,129 +10,163 @@
 <body>
     <header>
         <nav>
-            <div class="container">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.svg" alt="PilgrimPass Logo">
-                    JeruPath
-                </a>
-                <button class="mobile-menu-btn">☰</button>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="holy-sites.html">Holy Sites</a></li>
-                    <li><a href="packages.html">Packages</a></li>
-                    <li><a href="guide.html">Guide</a></li>
-                    <li><a href="videos.html" class="active">Videos</a></li>
-                </ul>
+          <div class="container">
+            <a href="index.html" class="logo">
+              <img src="images/logo.svg" alt="PilgrimPass Logo">
+              JeruPath
+            </a>
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
+            <ul class="nav-links">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="holy-sites.html">Holy Sites</a></li>
+              <li><a href="packages.html">Packages</a></li>
+              <li><a href="guide.html">Guide</a></li>
+              <li><a href="videos.html">Videos</a></li>
+            </ul>
+            <div class="nav-overlay"></div>
+          </div>
         </nav>
-    </header>
+      </header>
 
     <main class="videos-page">
         <div class="container">
             <h1>Video Guides</h1>
             <p class="page-description">Watch our educational videos to learn more about Jerusalem's holy sites and prepare for your visit.</p>
 
-            <div class="videos-grid">
-                <article class="video-card">
-                    <div class="video-thumbnail">
-                        <img src="images/al-aqsa-interior.jpg" alt="Inside Al-Aqsa Mosque" data-src="images/al-aqsa-interior.jpg">
-                        <span class="duration">15:30</span>
-                    </div>
-                    <div class="video-content">
-                        <h2>What's Inside Al-Aqsa?</h2>
-                        <p>Take a virtual tour of the magnificent Al-Aqsa Mosque, exploring its architecture, history, and spiritual significance.</p>
-                        <div class="video-meta">
-                            <span class="views">15K views</span>
-                            <span class="date">2 weeks ago</span>
+            <!-- Our Own Videos Section -->
+            <section class="video-section">
+                <h2>JeruPath Originals</h2>
+                <div class="videos-grid">
+                    <article class="video-card">
+                        <div class="video-embed video-responsive">
+                            <iframe src="https://www.youtube.com/embed/VIDEO_ID1" title="Our Guide 1" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <div class="video-tags">
-                            <span>Islamic Heritage</span>
-                            <span>Architecture</span>
-                            <span>History</span>
+                        <div class="video-content">
+                            <h3>Welcome to Jerusalem</h3>
+                            <p>Our own introduction to the city and its spiritual journey.</p>
                         </div>
-                    </div>
-                </article>
+                    </article>
+                    <article class="video-card">
+                        <div class="video-embed video-responsive">
+                            <iframe src="https://www.youtube.com/embed/VIDEO_ID2" title="Our Guide 2" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3>How to Use Your Brochure</h3>
+                            <p>Step-by-step guide to making the most of your JeruPath digital brochure.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-                <article class="video-card">
-                    <div class="video-thumbnail">
-                        <img src="images/jerusalem-entrance.jpg" alt="Entering Jerusalem" data-src="images/jerusalem-entrance.jpg">
-                        <span class="duration">12:45</span>
-                    </div>
-                    <div class="video-content">
-                        <h2>How to Enter Jerusalem with Respect</h2>
-                        <p>Learn about the proper etiquette and customs when visiting Jerusalem's holy sites, ensuring a respectful experience.</p>
-                        <div class="video-meta">
-                            <span class="views">12K views</span>
-                            <span class="date">1 month ago</span>
+            <!-- General Jerusalem Videos Section (moved up) -->
+            <section class="video-section">
+                <h2>Explore Jerusalem</h2>
+                <div class="videos-grid">
+                    <article class="video-card">
+                        <div class="video-embed video-responsive">
+                            <iframe src="https://www.youtube.com/embed/QogMYY7UGC4" title="Is Jerusalem Safe?" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <div class="video-tags">
-                            <span>Etiquette</span>
-                            <span>Culture</span>
-                            <span>Travel Tips</span>
+                        <div class="video-content">
+                            <h3>Is Jerusalem Safe?</h3>
+                            <p>All about security and safety for visitors.</p>
                         </div>
-                    </div>
-                </article>
+                    </article>
+                    <article class="video-card">
+                        <div class="video-embed video-responsive">
+                            <iframe src="https://www.youtube.com/embed/X1sEksYPLDc" title="Security Tips for Visitors" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3>Security Tips for Visitors</h3>
+                            <p>Essential safety tips for a secure and enjoyable visit to Jerusalem.</p>
+                        </div>
+                    </article>
+                    <article class="video-card">
+                        <div class="video-embed video-responsive">
+                            <iframe src="https://www.youtube.com/embed/4z2xoTa4d0A" title="Top Sights in Jerusalem" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3>Top Sights in Jerusalem</h3>
+                            <p>Must-see places and travel tips for your visit.</p>
+                        </div>
+                    </article>
+                    <article class="video-card">
+                        <div class="video-embed video-responsive">
+                            <iframe src="https://www.youtube.com/embed/mMW9JVhSZ1A" title="Discover Jerusalem" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3>Discover Jerusalem</h3>
+                            <p>A general introduction to the city and its wonders.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-                <article class="video-card">
-                    <div class="video-thumbnail">
-                        <img src="images/security-check.jpg" alt="Security Check" data-src="images/security-check.jpg">
-                        <span class="duration">08:20</span>
-                    </div>
-                    <div class="video-content">
-                        <h2>Is Jerusalem Safe?</h2>
-                        <p>Understanding security measures and safety guidelines for visitors to Jerusalem's holy sites.</p>
-                        <div class="video-meta">
-                            <span class="views">20K views</span>
-                            <span class="date">3 weeks ago</span>
+            <!-- Customer Videos Section (moved down) -->
+            <section class="video-section">
+                <h2>From Our Travelers</h2>
+                <div class="videos-grid">
+                    <article class="video-card">
+                        <div class="video-embed video-responsive">
+                            <video controls>
+                                <source src="video/WhatsApp Video 2025-05-15 saat 20.54.09_bacb6cde.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-                        <div class="video-tags">
-                            <span>Safety</span>
-                            <span>Security</span>
-                            <span>Travel Guide</span>
+                        <div class="video-content">
+                            <h3>Traveler Video #1</h3>
+                            <p>Shared by one of our brochure users.</p>
                         </div>
-                    </div>
-                </article>
-
-                <article class="video-card">
-                    <div class="video-thumbnail">
-                        <img src="images/local-food.jpg" alt="Local Food" data-src="images/local-food.jpg">
-                        <span class="duration">10:15</span>
-                    </div>
-                    <div class="video-content">
-                        <h2>Where to Eat?</h2>
-                        <p>Discover the best local restaurants and food options near Jerusalem's holy sites, including halal and kosher choices.</p>
-                        <div class="video-meta">
-                            <span class="views">8K views</span>
-                            <span class="date">2 months ago</span>
+                    </article>
+                    <article class="video-card">
+                        <div class="video-embed video-responsive">
+                            <video controls>
+                                <source src="video/WhatsApp Video 2025-05-15 saat 20.54.10_a2bef83b.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-                        <div class="video-tags">
-                            <span>Food</span>
-                            <span>Local Culture</span>
-                            <span>Dining</span>
+                        <div class="video-content">
+                            <h3>Traveler Video #2</h3>
+                            <p>Shared by one of our brochure users.</p>
                         </div>
-                    </div>
-                </article>
-
-                <article class="video-card">
-                    <div class="video-thumbnail">
-                        <img src="images/friday-prayers.jpg" alt="Friday Prayers" data-src="images/friday-prayers.jpg">
-                        <span class="duration">14:30</span>
-                    </div>
-                    <div class="video-content">
-                        <h2>Why is Friday in Jerusalem Special?</h2>
-                        <p>Explore the significance of Friday prayers in Jerusalem and what makes this day unique in the holy city.</p>
-                        <div class="video-meta">
-                            <span class="views">25K views</span>
-                            <span class="date">1 week ago</span>
+                    </article>
+                    <article class="video-card">
+                        <div class="video-embed video-responsive">
+                            <video controls>
+                                <source src="video/WhatsApp Video 2025-05-15 saat 20.54.12_a293166e.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-                        <div class="video-tags">
-                            <span>Religious Practice</span>
-                            <span>Culture</span>
-                            <span>Spirituality</span>
+                        <div class="video-content">
+                            <h3>Traveler Video #3</h3>
+                            <p>Shared by one of our brochure users.</p>
                         </div>
-                    </div>
-                </article>
-            </div>
+                    </article>
+                    <article class="video-card">
+                        <div class="video-embed video-responsive">
+                            <video controls>
+                                <source src="video/WhatsApp Video 2025-05-15 saat 20.54.12_2fdc47df.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-content">
+                            <h3>Traveler Video #4</h3>
+                            <p>Shared by one of our brochure users.</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Experience Sharing Call-to-Action Box -->
+                <div style="margin-top:2.5rem; display:flex; justify-content:center;">
+                  <div style="background: #23234a; color: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(44,44,80,0.10); padding: 2.2rem 2.5rem; max-width: 540px; text-align: center;">
+                    <h3 style="color: #D4AF37; font-size: 2rem; margin-bottom: 0.7rem; font-family: 'Libre Baskerville', serif;">Share Your Experience!</h3>
+                    <p style="font-size: 1.15rem; margin-bottom: 1.3rem;">Did you visit Jerusalem with JeruPath? We'd love to hear your story and share your journey with future travelers. <br>Click below to send us your video or testimonial!</p>
+                    <a href="share.html" class="btn btn-primary" style="background: #D4AF37; color: #23234a; font-weight: 700; padding: 0.9rem 2.2rem; border-radius: 8px; font-size: 1.1rem; text-decoration: none; transition: background 0.2s; display: inline-block;">Share Your Experience</a>
+                  </div>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -156,14 +190,14 @@
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <ul>
-                        <li>Email: info@JeruPath.com</li>
-                        <li>Phone: +972 2-123-4567</li>
+                        <li>Email: info@jerupath.com</li>
+                        <li>Phone: +972 2 3803045</li>
                         <li>Address: Jerusalem, Israel</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> 2025 JeruPath. All rights reserved.</p>
+                <p>&copy; <span id="year"></span>2025 JeruPath. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -171,3 +205,80 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+<style>
+.video-section {
+    margin-bottom: 3.5rem;
+}
+.video-section h2 {
+    font-size: 1.5rem;
+    color: #23234a;
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+.video-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(44, 44, 84, 0.07);
+    padding: 0 0 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.video-embed {
+    width: 100%;
+    height: 200px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-card h3 {
+    font-size: 1.15rem;
+    font-family: 'Libre Baskerville', serif;
+    color: #23234a;
+    margin: 1.2rem 0 0.7rem 0;
+    text-align: left;
+    padding: 0 1.2rem;
+}
+.video-card p {
+    color: #23234a;
+    font-size: 1.02rem;
+    line-height: 1.5;
+    margin: 0 0 0.7rem 0;
+    text-align: left;
+    padding: 0 1.2rem;
+}
+@media (max-width: 900px) {
+    .videos-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .video-section h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+}
+.video-embed.video-responsive {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+.video-embed.video-responsive iframe,
+.video-embed.video-responsive video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+</style>

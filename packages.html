@@ -3,127 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour Packages - PilgrimPass</title>
+    <title>JeruPath | PilgrimPass</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="container">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.svg" alt="PilgrimPass Logo">
-                    JeruPath
-                </a>
-                <button class="mobile-menu-btn">☰</button>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="holy-sites.html">Holy Sites</a></li>
-                    <li><a href="packages.html" class="active">Packages</a></li>
-                    <li><a href="guide.html">Guide</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                </ul>
+          <div class="container">
+            <a href="index.html" class="logo">
+              <img src="images/logo.svg" alt="PilgrimPass Logo">
+              JeruPath
+            </a>
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="holy-sites.html">Holy Sites</a></li>
+              <li><a href="packages.html" class="active">Packages</a></li>
+              <li><a href="guide.html">Guide</a></li>
+              <li><a href="videos.html">Videos</a></li>
+            </ul>
+            <div class="nav-overlay"></div>
+          </div>
         </nav>
     </header>
 
     <main>
         <section class="packages-hero">
             <div class="container">
-                <h1>JeruPath Packages</h1>
-                <p>Choose your spiritual journey through Jerusalem's sacred sites</p>
+                <h1>Our Packages</h1>
+                <p>Choose the perfect package for your spiritual journey</p>
             </div>
         </section>
 
-        <section class="packages-grid">
-            <div class="container">
-                <div class="package-cards">
-                    <!-- Complete Package -->
-                    <div class="package-card">
-                        <div class="package-image">
-                            <img src="images/complete-pilgrimage.jpg" alt="Complete Pilgrimage Package">
-                        </div>
-                        <div class="package-header">
-                            <h2>Complete Pilgrimage</h2>
-                            <div class="price">$499</div>
-                        </div>
-                        <div class="package-content">
-                            <ul class="package-features">
-                                <li>✓ 3-Day Guided Tour</li>
-                                <li>✓ All Major Holy Sites</li>
-                                <li>✓ Professional Guide</li>
-                                <li>✓ Transportation</li>
-                                <li>✓ Lunch Included</li>
-                                <li>✓ Prayer Time Included</li>
-                                <li>✓ Historical Commentary</li>
-                                <li>✓ Photo Opportunities</li>
-                            </ul>
-                            <div class="package-rating">
-                                <span class="stars">★★★★★</span>
-                                <span class="rating">4.9</span>
-                                <span class="reviews">(128 reviews)</span>
-                            </div>
-                            <a href="#book" class="btn btn-primary">Book Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Christian Heritage -->
-                    <div class="package-card">
-                        <div class="package-image">
-                            <img src="images/christian-heritage.jpg" alt="Christian Heritage Package">
-                        </div>
-                        <div class="package-header">
-                            <h2>Christian Heritage</h2>
-                            <div class="price">$299</div>
-                        </div>
-                        <div class="package-content">
-                            <ul class="package-features">
-                                <li>✓ 2-Day Guided Tour</li>
-                                <li>✓ Via Dolorosa</li>
-                                <li>✓ Church of Holy Sepulchre</li>
-                                <li>✓ Professional Guide</li>
-                                <li>✓ Transportation</li>
-                                <li>✓ Prayer Time Included</li>
-                                <li>✓ Historical Commentary</li>
-                            </ul>
-                            <div class="package-rating">
-                                <span class="stars">★★★★★</span>
-                                <span class="rating">4.8</span>
-                                <span class="reviews">(95 reviews)</span>
-                            </div>
-                            <a href="#book" class="btn btn-primary">Book Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Islamic Heritage -->
-                    <div class="package-card">
-                        <div class="package-image">
-                            <img src="images/islamic-heritage.jpg" alt="Islamic Heritage Package">
-                        </div>
-                        <div class="package-header">
-                            <h2>Islamic Heritage</h2>
-                            <div class="price">$299</div>
-                        </div>
-                        <div class="package-content">
-                            <ul class="package-features">
-                                <li>✓ 2-Day Guided Tour</li>
-                                <li>✓ Al-Aqsa Mosque</li>
-                                <li>✓ Dome of the Rock</li>
-                                <li>✓ Professional Guide</li>
-                                <li>✓ Transportation</li>
-                                <li>✓ Prayer Time Included</li>
-                                <li>✓ Historical Commentary</li>
-                            </ul>
-                            <div class="package-rating">
-                                <span class="stars">★★★★★</span>
-                                <span class="rating">4.7</span>
-                                <span class="reviews">(87 reviews)</span>
-                            </div>
-                            <a href="#book" class="btn btn-primary">Book Now</a>
-                        </div>
-                    </div>
+        <section class="packages-compare-section">
+            <div class="packages-compare-grid-cards">
+                <div class="feature-list">
+                    <div class="feature-title">Feature</div>
+                    <div class="feature-item">Pages</div>
+                    <div class="feature-item">Transport</div>
+                    <div class="feature-item">Emergency</div>
+                    <div class="feature-item">Hebrew</div>
+                    <div class="feature-item">Hotels</div>
+                    <div class="feature-item">Restaurants</div>
+                    <div class="feature-item">Holy Sites</div>
+                    <div class="feature-item">Dress Code</div>
+                    <div class="feature-item">Visa Info</div>
+                    <div class="feature-item">Shopping</div>
+                    <div class="feature-item">Kids Areas</div>
+                    <div class="feature-item">Photo Spots</div>
+                    <div class="feature-item">Nightlife</div>
+                    <div class="feature-item">Support</div>
+                </div>
+                <div class="package-card-grid basic-card">
+                    <div class="package-title">Basic</div>
+                    <div class="package-feature-value">4 pages</div>
+                    <div class="package-feature-value">✓ Basic</div>
+                    <div class="package-feature-value">✓</div>
+                    <div class="package-feature-value">✓ Basic words</div>
+                    <div class="package-feature-value">✗</div>
+                    <div class="package-feature-value">✗</div>
+                    <div class="package-feature-value">✗</div>
+                    <div class="package-feature-value">✓ Brief summary</div>
+                    <div class="package-feature-value">✗</div>
+                    <div class="package-feature-value">✗</div>
+                    <div class="package-feature-value">✗</div>
+                    <div class="package-feature-value">✗</div>
+                    <div class="package-feature-value">✗</div>
+                    <div class="package-feature-value">✗</div>
+                    <div class="package-price">$4</div>
+                    <a href="checkout.html?package=Starter&price=3" class="btn btn-basic">Select Basic</a>
+                </div>
+                <div class="package-card-grid standard-card">
+                    <div class="package-title">Standard</div>
+                    <div class="package-feature-value">9 pages</div>
+                    <div class="package-feature-value">✓ Extended</div>
+                    <div class="package-feature-value">✓</div>
+                    <div class="package-feature-value">✓ Includes phrases</div>
+                    <div class="package-feature-value">✓ 4 hotels</div>
+                    <div class="package-feature-value">✓ 4 suggestions</div>
+                    <div class="package-feature-value">✓ 1 page</div>
+                    <div class="package-feature-value">✓ Detailed</div>
+                    <div class="package-feature-value">✗</div>
+                    <div class="package-feature-value">✗</div>
+                    <div class="package-feature-value">✗</div>
+                    <div class="package-feature-value">✗</div>
+                    <div class="package-feature-value">✗</div>
+                    <div class="package-feature-value">✗</div>
+                    <div class="package-price">$7</div>
+                    <a href="checkout.html?package=Standard&price=7" class="btn btn-standard">Select Standard</a>
+                </div>
+                <div class="package-card-grid premium-card">
+                    <div class="package-title">Premium</div>
+                    <div class="package-feature-value">31 pages</div>
+                    <div class="package-feature-value">✓ Detailed + app suggestions</div>
+                    <div class="package-feature-value">✓ + Hospital & Pharmacy info</div>
+                    <div class="package-feature-value">✓ Extended + food/transport phrases</div>
+                    <div class="package-feature-value">✓ 12 hotels (with rating, phone, email)</div>
+                    <div class="package-feature-value">✓ 10 restaurants + descriptions & ratings</div>
+                    <div class="package-feature-value">✓ All sites of 3 religions + behavior guide</div>
+                    <div class="package-feature-value">✓ Seasonal advice + religious area differences</div>
+                    <div class="package-feature-value">✓ Full page guide</div>
+                    <div class="package-feature-value">✓ 4 malls + traditional markets</div>
+                    <div class="package-feature-value">✓ Parks + kids museums + suggestions</div>
+                    <div class="package-feature-value">✓ Best Instagram spots</div>
+                    <div class="package-feature-value">✓ Bars, music venues, entertainment guide</div>
+                    <div class="package-feature-value">✓ WhatsApp support line + updates</div>
+                    <div class="package-price">$9</div>
+                    <a href="checkout.html?package=Premium&price=9" class="btn btn-premium">Select Premium</a>
                 </div>
             </div>
+            <div class="packages-mobile-cards">
+                <div class="mobile-package-card">
+                    <div class="mobile-package-title">Basic Package</div>
+                    <div class="mobile-package-price">$3</div>
+                    <ul>
+                        <li><b>Page Count:</b> 4 pages</li>
+                        <li><b>Transportation Info:</b> ✓ Basic</li>
+                        <li><b>Emergency Numbers:</b> ✓</li>
+                        <li><b>Basic Hebrew:</b> ✓ Basic words</li>
+                        <li><b>Hotel Recommendations:</b> ✗</li>
+                        <li><b>Restaurants:</b> ✗</li>
+                        <li><b>Holy Sites:</b> ✗</li>
+                        <li><b>Dress Code:</b> ✓ Brief summary</li>
+                        <li><b>Visa & Entry Info:</b> ✗</li>
+                        <li><b>Shopping Areas:</b> ✗</li>
+                        <li><b>Kid-Friendly Areas:</b> ✗</li>
+                        <li><b>Photo Spots:</b> ✗</li>
+                        <li><b>Nightlife:</b> ✗</li>
+                        <li><b>Special Support:</b> ✗</li>
+                    </ul>
+                    <a href="checkout.html?package=Starter&price=3" class="btn btn-basic">Select Basic</a>
+                </div>
+                <div class="mobile-package-card">
+                    <div class="mobile-package-title">Standard Package</div>
+                    <div class="mobile-package-price">$7</div>
+                    <ul>
+                        <li><b>Page Count:</b> 9 pages</li>
+                        <li><b>Transportation Info:</b> ✓ Extended</li>
+                        <li><b>Emergency Numbers:</b> ✓</li>
+                        <li><b>Basic Hebrew:</b> ✓ Includes phrases</li>
+                        <li><b>Hotel Recommendations:</b> ✓ 4 hotels</li>
+                        <li><b>Restaurants:</b> ✓ 4 suggestions</li>
+                        <li><b>Holy Sites:</b> ✓ 1 page</li>
+                        <li><b>Dress Code:</b> ✓ Detailed</li>
+                        <li><b>Visa & Entry Info:</b> ✗</li>
+                        <li><b>Shopping Areas:</b> ✗</li>
+                        <li><b>Kid-Friendly Areas:</b> ✗</li>
+                        <li><b>Photo Spots:</b> ✗</li>
+                        <li><b>Nightlife:</b> ✗</li>
+                        <li><b>Special Support:</b> ✗</li>
+                    </ul>
+                    <a href="checkout.html?package=Standard&price=7" class="btn btn-standard">Select Standard</a>
+                </div>
+                <div class="mobile-package-card">
+                    <div class="mobile-package-title">Premium Package</div>
+                    <div class="mobile-package-price">$9</div>
+                    <ul>
+                        <li><b>Page Count:</b> 31 pages</li>
+                        <li><b>Transportation Info:</b> ✓ Detailed + app suggestions</li>
+                        <li><b>Emergency Numbers:</b> ✓ + Hospital & Pharmacy info</li>
+                        <li><b>Basic Hebrew:</b> ✓ Extended + food/transport phrases</li>
+                        <li><b>Hotel Recommendations:</b> ✓ 12 hotels (with rating, phone, email)</li>
+                        <li><b>Restaurants:</b> ✓ 10 restaurants + descriptions & ratings</li>
+                        <li><b>Holy Sites:</b> ✓ All sites of 3 religions + behavior guide</li>
+                        <li><b>Dress Code:</b> ✓ Seasonal advice + religious area differences</li>
+                        <li><b>Visa & Entry Info:</b> ✓ Full page guide</li>
+                        <li><b>Shopping Areas:</b> ✓ 4 malls + traditional markets</li>
+                        <li><b>Kid-Friendly Areas:</b> ✓ Parks + kids museums + suggestions</li>
+                        <li><b>Photo Spots:</b> ✓ Best Instagram spots</li>
+                        <li><b>Nightlife:</b> ✓ Bars, music venues, entertainment guide</li>
+                        <li><b>Special Support:</b> ✓ WhatsApp support line + updates</li>
+                    </ul>
+                    <a href="checkout.html?package=Premium&price=9" class="btn btn-premium">Select Premium</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="brochure-resend-section" style="margin: 4rem auto; max-width: 500px; background: #fffbe6; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); padding: 2rem; text-align: center;">
+            <h2 style="color: #D4AF37; margin-bottom: 1rem;">Lost your brochure?</h2>
+            <p style="color: #1A1A40; margin-bottom: 1.5rem;">If you have previously purchased a package and lost your brochure, enter your email address below to have it resent to you.<br><b>You can request a resend up to 3 times per package.</b></p>
+            <form id="resendBrochureForm">
+                <input type="email" id="resendEmail" name="resendEmail" placeholder="Your email address" required style="padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid #D4AF37; width: 80%; max-width: 300px; margin-bottom: 1rem;">
+                <br>
+                <button type="submit" class="btn btn-basic" style="width: 200px;">Resend</button>
+            </form>
+            <div id="resendBrochureMessage" style="margin-top: 1rem; font-size: 1rem;"></div>
         </section>
     </main>
 
@@ -132,7 +202,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>JeruPath</h3>
-                    <p>Your guide to Jerusalem's holy sites</p>
+                    <p>Your trusted guide to Jerusalem's holy sites.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
@@ -141,22 +211,320 @@
                         <li><a href="holy-sites.html">Holy Sites</a></li>
                         <li><a href="packages.html">Packages</a></li>
                         <li><a href="guide.html">Guide</a></li>
+                        <li><a href="videos.html">Videos</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <ul>
-                        <li>Email: info@JeruPath.com</li>
-                        <li>Phone: +972 2 123 4567</li>
+                        <li>Email: info@jerupath.com</li>
+                        <li>Phone: +972 2 3803045</li>
+                        <li>Address: Jerusalem, Israel</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 JeruPath. All rights reserved.</p>
+                <p>&copy; <span id="year"></span>2025 JeruPath. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="script.js"></script>
+    <script>
+    // Brochure resend form
+    const resendForm = document.getElementById('resendBrochureForm');
+    const resendEmailInput = document.getElementById('resendEmail');
+    const resendMessage = document.getElementById('resendBrochureMessage');
+    if(resendForm) {
+        resendForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            resendMessage.textContent = 'Processing...';
+            try {
+                const response = await fetch('http://localhost:3000/api/resend-pdf', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email: resendEmailInput.value })
+                });
+                const result = await response.json();
+                if(result.success) {
+                    resendMessage.style.color = '#27ae60';
+                    resendMessage.textContent = 'The brochure has been resent to your email!';
+                } else {
+                    resendMessage.style.color = '#e74c3c';
+                    resendMessage.textContent = result.message || 'Resend could not be completed.';
+                }
+            } catch (err) {
+                resendMessage.style.color = '#e74c3c';
+                resendMessage.textContent = 'An error occurred, please try again.';
+            }
+        });
+    }
+    </script>
+
+    <style>
+    body {
+      background: #fff !important;
+    }
+    .packages-compare-section {
+      background: #fff;
+      padding-top: 2.5rem;
+    }
+    .packages-compare-grid-cards {
+      display: grid;
+      grid-template-columns: 180px minmax(200px, 1fr) minmax(200px, 1fr) minmax(280px, 1.5fr);
+      max-width: 1100px;
+      margin: 3.5rem auto 2rem auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      align-items: stretch;
+      font-size: 0.97rem;
+      justify-content: center;
+    }
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-width: 160px;
+      background: #23234a;
+      color: #fff;
+      border-radius: 18px 0 0 18px;
+      padding: 1.5rem 0.7rem 1.1rem 0.7rem;
+      grid-row: 1 / span 18;
+      grid-column: 1 / 2;
+    }
+    .feature-title {
+      color: #D4AF37;
+      font-size: 1.25rem;
+      font-family: 'Libre Baskerville', serif;
+      font-weight: bold;
+      padding: 0 0.2rem 0.7rem 0.2rem;
+      text-align: center;
+      border-bottom: 1px solid #23234a;
+      text-transform: uppercase;
+    }
+    .feature-item {
+      font-size: 0.95rem;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      padding: 0.45rem 0.2rem;
+      border-bottom: 1px solid #23234a;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      margin: 0;
+    }
+    .package-card-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      background: #fff;
+      border-radius: 0 18px 18px 0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      margin: 0;
+      transition: box-shadow 0.2s, background 0.2s, transform 0.2s;
+      position: relative;
+      grid-row: 1 / span 18;
+    }
+    .package-card-grid:hover,
+    .package-card-grid:focus-within {
+      background: #fffbe6;
+      box-shadow: 0 8px 32px rgba(212,175,55,0.13);
+      transform: translateY(-6px) scale(1.03);
+      z-index: 2;
+    }
+    .package-title {
+      color: #D4AF37;
+      font-size: 1.25rem;
+      font-family: 'Libre Baskerville', serif;
+      font-weight: bold;
+      padding: 1.5rem 0.7rem 0.7rem 0.7rem;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+      background: #fff;
+      border-radius: 0 18px 0 0;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    .package-feature-value {
+      font-size: 0.97rem;
+      color: #23234a;
+      padding: 0.45rem 0.2rem;
+      border-bottom: 1px solid #f2f2f2;
+      text-align: center;
+      background: #fff;
+      transition: box-shadow 0.2s, background 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 32px;
+      line-height: 1.4;
+      margin: 0;
+    }
+    .premium-card .package-feature-value {
+      padding: 0.45rem 0.2rem;
+      font-size: 0.95rem;
+    }
+    .standard-card .package-feature-value {
+      padding: 0.45rem 0.2rem;
+    }
+    .basic-card .package-feature-value {
+      padding: 0.45rem 0.2rem;
+    }
+    .package-price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #D4AF37;
+      margin: 0.7rem 0 0.3rem 0;
+      text-align: center;
+      background: #fff;
+      padding: 0.7rem 0;
+      border-radius: 0 0 0 0;
+    }
+    .btn-basic, .btn-standard, .btn-premium {
+      display: block;
+      width: 90%;
+      margin: 0.3rem auto 1rem auto;
+      padding: 0.6rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+      text-align: center;
+      text-decoration: none;
+      background: #D4AF37;
+      color: #23234a;
+    }
+    .package-card-grid:hover .btn-basic,
+    .package-card-grid:hover .btn-standard,
+    .package-card-grid:hover .btn-premium {
+      background: #bfa133;
+      color: #fff;
+    }
+    .packages-mobile-cards { display: none; }
+    @media (max-width: 900px) {
+      .packages-compare-grid-cards { display: none; }
+      .packages-mobile-cards { 
+        display: block; 
+        max-width: 420px; 
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      .mobile-package-card {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        margin-bottom: 2rem;
+        padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+      }
+      .mobile-package-title {
+        color: #D4AF37;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+      .mobile-package-price {
+        color: #D4AF37;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1.2rem;
+      }
+      .mobile-package-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1.2rem 0;
+      }
+      .mobile-package-card ul li {
+        font-size: 0.95rem;
+        color: #23234a;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #f2f2f2;
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        gap: 0.5rem;
+        align-items: start;
+      }
+      .mobile-package-card ul li b {
+        font-weight: 600;
+        color: #23234a;
+        font-size: 0.95rem;
+        line-height: 1.4;
+        min-width: 110px;
+      }
+      .mobile-package-card ul li:not(b) {
+        line-height: 1.4;
+        text-align: right;
+      }
+      /* Premium kartı için özel stiller */
+      .mobile-package-card:last-child ul li {
+        font-size: 0.92rem;
+        padding: 0.6rem 0;
+      }
+      .mobile-package-card:last-child ul li b {
+        font-size: 0.92rem;
+      }
+      .mobile-package-card .btn-basic,
+      .mobile-package-card .btn-standard,
+      .mobile-package-card .btn-premium {
+        width: 100%;
+        margin: 1rem 0 0 0;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        background: #D4AF37;
+        color: #23234a;
+        padding: 0.8rem;
+      }
+      .mobile-package-card .btn-basic:hover,
+      .mobile-package-card .btn-standard:hover,
+      .mobile-package-card .btn-premium:hover {
+        background: #bfa133;
+        color: #fff;
+      }
+    }
+    </style>
+
+    <script>
+    // Masaüstü sütun hover efekti için
+    if(window.innerWidth > 900) {
+      const grid = document.querySelector('.packages-compare-grid-cards');
+      if(grid) {
+        const cols = [1,2,3];
+        cols.forEach(function(colIdx) {
+          const selector = `.packages-compare-grid-cards > :nth-child(${colIdx+1}),
+            .packages-compare-grid-cards > :nth-child(${colIdx+1 + 4}),
+            .packages-compare-grid-cards > :nth-child(${colIdx+1 + 8}),
+            .packages-compare-grid-cards > :nth-child(${colIdx+1 + 12}),
+            .packages-compare-grid-cards > :nth-child(${colIdx+1 + 16}),
+            .packages-compare-grid-cards > :nth-child(${colIdx+1 + 20}),
+            .packages-compare-grid-cards > :nth-child(${colIdx+1 + 24}),
+            .packages-compare-grid-cards > :nth-child(${colIdx+1 + 28}),
+            .packages-compare-grid-cards > :nth-child(${colIdx+1 + 32}),
+            .packages-compare-grid-cards > :nth-child(${colIdx+1 + 36}),
+            .packages-compare-grid-cards > :nth-child(${colIdx+1 + 40}),
+            .packages-compare-grid-cards > :nth-child(${colIdx+1 + 44}),
+            .packages-compare-grid-cards > :nth-child(${colIdx+1 + 48}),
+            .packages-compare-grid-cards > :nth-child(${colIdx+1 + 52}),
+            .packages-compare-grid-cards > :nth-child(${colIdx+1 + 56}),
+            .packages-compare-grid-cards > :nth-child(${colIdx+1 + 60}),
+            .packages-compare-grid-cards > :nth-child(${colIdx+1 + 64})`;
+          const colEls = grid.querySelectorAll(selector);
+          colEls.forEach(function(el) {
+            el.addEventListener('mouseenter', function() {
+              colEls.forEach(e => e.classList.add('hover-col'));
+            });
+            el.addEventListener('mouseleave', function() {
+              colEls.forEach(e => e.classList.remove('hover-col'));
+            });
+          });
+        });
+      }
+    }
+    </script>
 </body>
-</html> 
+</html>

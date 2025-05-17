@@ -3,182 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Guides - PilgrimPass</title>
+    <title>JeruPath | Travel Guide</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="container">
                 <a href="index.html" class="logo">
-                    <img src="images/logo.svg" alt="PilgrimPass Logo">
+                    <img src="images/logo.svg" alt="JeruPath Logo">
                     JeruPath
                 </a>
-                <button class="mobile-menu-btn">☰</button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="holy-sites.html">Holy Sites</a></li>
                     <li><a href="packages.html">Packages</a></li>
                     <li><a href="guide.html" class="active">Guide</a></li>
                     <li><a href="videos.html">Videos</a></li>
-                    <li>
-                        <div class="cart-icon" id="cartIcon">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="cart-count">0</span>
-                        </div>
-                    </li>
                 </ul>
+                <div class="nav-overlay"></div>
             </div>
         </nav>
     </header>
 
-    <!-- Cart Sidebar -->
-    <div class="cart-sidebar" id="cartSidebar">
-        <div class="cart-header">
-            <h2>Your Cart</h2>
-            <button class="close-cart" id="closeCart">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div class="cart-items" id="cartItems">
-            <!-- Cart items will be added here dynamically -->
-        </div>
-        <div class="cart-total">
-            <div class="cart-total-row">
-                <span>Subtotal:</span>
-                <span id="cartSubtotal">$0</span>
-            </div>
-            <div class="cart-total-row">
-                <span>Days:</span>
-                <span id="cartDays">0</span>
-            </div>
-            <div class="cart-total-row total">
-                <span>Total:</span>
-                <span id="cartTotal">$0</span>
-            </div>
-            <a href="#" class="checkout-btn">Proceed to Checkout</a>
-        </div>
-    </div>
-
     <main>
-        <section class="guides-hero">
+        <section class="guide-hero">
             <div class="container">
-                <h1>Our Expert Guides</h1>
-                <p>Meet our experienced guides who will make your pilgrimage journey meaningful and memorable</p>
+                <h1>Your Complete Guide to Jerusalem</h1>
+                <p>Discover the best tips, insights, and information for your spiritual journey</p>
             </div>
         </section>
 
-        <section class="guides-grid">
+        <section class="guide-content">
             <div class="container">
-                <div class="guide-cards">
-                    <!-- Guide 1 -->
-                    <div class="package-card">
-                        <div class="package-image">
-                            <img src="images/guide-ahmed.jpg" alt="Ahmed - Islamic Heritage Guide">
+                <div class="guide-grid">
+                    <!-- Best Time to Visit -->
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-calendar-alt"></i>
                         </div>
-                        <div class="package-header">
-                            <h2>Ahmed Hassan</h2>
-                            <div class="price">$50</div>
-                            <div class="price-per-day">per day</div>
-                        </div>
-                        <div class="package-content">
-                            <div class="guide-experience">
-                                <span class="years">15+ Years Experience</span>
-                                <span class="tours">1000+ Tours</span>
-                            </div>
-                            <ul class="package-features">
-                                <li>✓ Al-Aqsa History</li>
-                                <li>✓ Dome of the Rock</li>
-                                <li>✓ Islamic Architecture</li>
-                                <li>✓ Arabic & English</li>
-                                <li>✓ Holy Sites</li>
-                            </ul>
-                            <div class="package-rating">
-                                <span class="stars">★★★★★</span>
-                                <span class="rating">4.9</span>
-                                <span class="reviews">(245 reviews)</span>
-                            </div>
-                            <div class="date-picker-container">
-                                <label for="date-1">Select Dates:</label>
-                                <input type="text" id="date-1" class="date-picker" placeholder="Select dates" data-guide-id="1">
-                            </div>
-                            <button class="btn btn-primary add-to-cart" data-guide-id="1" data-guide-name="Ahmed Hassan" data-guide-price="50" data-guide-image="images/guide-ahmed.jpg">Add to Cart</button>
+                        <h3>Best Time to Visit</h3>
+                        <div class="guide-details">
+                            <h4>Spring (March-May)</h4>
+                            <p>Mild weather, blooming flowers, and fewer crowds</p>
+                            <h4>Fall (September-November)</h4>
+                            <p>Pleasant temperatures and comfortable for walking</p>
+                            <h4>Religious Holidays</h4>
+                            <p>Check the calendar for major religious holidays that may affect your visit</p>
                         </div>
                     </div>
 
-                    <!-- Guide 2 -->
-                    <div class="package-card">
-                        <div class="package-image">
-                            <img src="images/guide-michael.jpg" alt="Michael - Christian Heritage Guide">
+                    <!-- Transportation -->
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-bus"></i>
                         </div>
-                        <div class="package-header">
-                            <h2>Michael Cohen</h2>
-                            <div class="price">$50</div>
-                            <div class="price-per-day">per day</div>
-                        </div>
-                        <div class="package-content">
-                            <div class="guide-experience">
-                                <span class="years">12+ Years Experience</span>
-                                <span class="tours">800+ Tours</span>
-                            </div>
-                            <ul class="package-features">
-                                <li>✓ Via Dolorosa</li>
-                                <li>✓ Church of Holy Sepulchre</li>
-                                <li>✓ Christian History</li>
-                                <li>✓ Hebrew & English</li>
-                                <li>✓ Holy Sites</li>
-                            </ul>
-                            <div class="package-rating">
-                                <span class="stars">★★★★★</span>
-                                <span class="rating">4.8</span>
-                                <span class="reviews">(198 reviews)</span>
-                            </div>
-                            <div class="date-picker-container">
-                                <label for="date-2">Select Dates:</label>
-                                <input type="text" id="date-2" class="date-picker" placeholder="Select dates" data-guide-id="2">
-                            </div>
-                            <button class="btn btn-primary add-to-cart" data-guide-id="2" data-guide-name="Michael Cohen" data-guide-price="50" data-guide-image="images/guide-michael.jpg">Add to Cart</button>
+                        <h3>Getting Around</h3>
+                        <div class="guide-details">
+                            <h4>Public Transportation</h4>
+                            <p>Efficient bus system connecting major sites</p>
+                            <h4>Light Rail</h4>
+                            <p>Modern tram system through the city center</p>
+                            <h4>Walking</h4>
+                            <p>Many sites are within walking distance in the Old City</p>
                         </div>
                     </div>
 
-                    <!-- Guide 3 -->
-                    <div class="package-card">
-                        <div class="package-image">
-                            <img src="images/guide-sarah.jpg" alt="Sarah - Complete Heritage Guide">
+                    <!-- Cultural Etiquette -->
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-hands"></i>
                         </div>
-                        <div class="package-header">
-                            <h2>Sarah Goldstein</h2>
-                            <div class="price">$50</div>
-                            <div class="price-per-day">per day</div>
+                        <h3>Cultural Etiquette</h3>
+                        <div class="guide-details">
+                            <h4>Dress Code</h4>
+                            <p>Modest clothing required at religious sites</p>
+                            <h4>Photography</h4>
+                            <p>Check for restrictions at religious sites</p>
+                            <h4>Respect</h4>
+                            <p>Maintain quiet and respectful behavior</p>
                         </div>
-                        <div class="package-content">
-                            <div class="guide-experience">
-                                <span class="years">10+ Years Experience</span>
-                                <span class="tours">600+ Tours</span>
-                            </div>
-                            <ul class="package-features">
-                                <li>✓ All Holy Sites</li>
-                                <li>✓ Archaeology</li>
-                                <li>✓ Religious History</li>
-                                <li>✓ Hebrew & Arabic & English</li>
-                                <li>✓ Private Tours</li>
-                            </ul>
-                            <div class="package-rating">
-                                <span class="stars">★★★★★</span>
-                                <span class="rating">4.9</span>
-                                <span class="reviews">(167 reviews)</span>
-                            </div>
-                            <div class="date-picker-container">
-                                <label for="date-3">Select Dates:</label>
-                                <input type="text" id="date-3" class="date-picker" placeholder="Select dates" data-guide-id="3">
-                            </div>
-                            <button class="btn btn-primary add-to-cart" data-guide-id="3" data-guide-name="Sarah Goldstein" data-guide-price="50" data-guide-image="images/guide-sarah.jpg">Add to Cart</button>
+                    </div>
+
+                    <!-- Safety Tips -->
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Safety Tips</h3>
+                        <div class="guide-details">
+                            <h4>General Safety</h4>
+                            <p>Stay aware of your surroundings</p>
+                            <h4>Emergency Numbers</h4>
+                            <p>Police: 100, Ambulance: 101</p>
+                            <h4>Travel Insurance</h4>
+                            <p>Always recommended for international travel</p>
+                        </div>
+                    </div>
+
+                    <!-- Local Customs -->
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-mosque"></i>
+                        </div>
+                        <h3>Local Customs</h3>
+                        <div class="guide-details">
+                            <h4>Religious Sites</h4>
+                            <p>Remove shoes where required</p>
+                            <h4>Greetings</h4>
+                            <p>Learn basic greetings in Hebrew and Arabic</p>
+                            <h4>Shabbat</h4>
+                            <p>Be aware of Friday sunset to Saturday sunset</p>
+                        </div>
+                    </div>
+
+                    <!-- Food & Dining -->
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Food & Dining</h3>
+                        <div class="guide-details">
+                            <h4>Local Cuisine</h4>
+                            <p>Try traditional dishes like hummus and falafel</p>
+                            <h4>Kosher Options</h4>
+                            <p>Many restaurants offer kosher meals</p>
+                            <h4>Markets</h4>
+                            <p>Visit local markets for authentic food experiences</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Interactive Map Section -->
+                <section class="interactive-map">
+                    <h2>Interactive Map</h2>
+                    <div class="map-container">
+                        <div id="map" style="position: relative; height: 400px; background: #f3f4f6; border-radius: 8px;">
+                            <!-- SVG ile yollar ve noktalar -->
+                            <svg width="100%" height="100%" viewBox="0 0 600 400" style="position:absolute;top:0;left:0;z-index:1;">
+                                <!-- Yollar (örnek çizgiler) -->
+                                <line x1="180" y1="160" x2="360" y2="120" stroke="#bdbdbd" stroke-width="6" stroke-linecap="round" />
+                                <line x1="360" y1="120" x2="300" y2="240" stroke="#bdbdbd" stroke-width="6" stroke-linecap="round" />
+                                <line x1="300" y1="240" x2="420" y2="320" stroke="#bdbdbd" stroke-width="6" stroke-linecap="round" />
+                                <line x1="180" y1="160" x2="120" y2="320" stroke="#bdbdbd" stroke-width="6" stroke-linecap="round" />
+                                <line x1="300" y1="240" x2="120" y2="320" stroke="#bdbdbd" stroke-width="6" stroke-linecap="round" />
+                            </svg>
+                            <!-- Noktalar -->
+                            <div style="position: absolute; left: 30%; top: 40%; transform: translate(-50%, -50%); text-align: center; z-index:2;">
+                                <i class="fas fa-mosque" style="color: #D4AF37; font-size: 2rem;"></i><br>
+                                <span style="font-size: 0.95rem; color: #1A1A40; font-weight: bold;">Al-Aqsa Mosque</span>
+                            </div>
+                            <div style="position: absolute; left: 60%; top: 30%; transform: translate(-50%, -50%); text-align: center; z-index:2;">
+                                <i class="fas fa-church" style="color: #D4AF37; font-size: 2rem;"></i><br>
+                                <span style="font-size: 0.95rem; color: #1A1A40; font-weight: bold;">Church of the Holy Sepulchre</span>
+                            </div>
+                            <div style="position: absolute; left: 50%; top: 60%; transform: translate(-50%, -50%); text-align: center; z-index:2;">
+                                <i class="fas fa-synagogue" style="color: #D4AF37; font-size: 2rem;"></i><br>
+                                <span style="font-size: 0.95rem; color: #1A1A40; font-weight: bold;">Western Wall</span>
+                            </div>
+                            <div style="position: absolute; left: 70%; top: 80%; transform: translate(-50%, -50%); text-align: center; z-index:2;">
+                                <i class="fas fa-utensils" style="color: #D4AF37; font-size: 2rem;"></i><br>
+                                <span style="font-size: 0.95rem; color: #1A1A40; font-weight: bold;">Machane Yehuda Market</span>
+                            </div>
+                            <div style="position: absolute; left: 20%; top: 80%; transform: translate(-50%, -50%); text-align: center; z-index:2;">
+                                <i class="fas fa-hotel" style="color: #D4AF37; font-size: 2rem;"></i><br>
+                                <span style="font-size: 0.95rem; color: #1A1A40; font-weight: bold;">King David Hotel</span>
+                            </div>
+                        </div>
+                        <div class="map-legend">
+                            <h4>Legend</h4>
+                            <ul>
+                                <li><i class="fas fa-mosque"></i> Mosques</li>
+                                <li><i class="fas fa-church"></i> Churches</li>
+                                <li><i class="fas fa-synagogue"></i> Synagogues</li>
+                                <li><i class="fas fa-utensils"></i> Restaurants</li>
+                                <li><i class="fas fa-hotel"></i> Hotels</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FAQ Section -->
+                <section class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h3>What is the best way to get to the Old City?</h3>
+                            <p>The Old City is accessible by light rail, bus, or taxi. The Jaffa Gate and Damascus Gate are the main entrances.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Are there guided tours available?</h3>
+                            <p>Yes, there are many guided tours available in multiple languages. You can book through official tourism offices or online.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>What should I wear when visiting religious sites?</h3>
+                            <p>Modest clothing is required. Shoulders and knees should be covered. Some sites may provide coverings if needed.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Is it safe to visit Jerusalem?</h3>
+                            <p>Jerusalem is generally safe for tourists. However, it's always good to stay informed about current events and follow local advice.</p>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
     </main>
@@ -188,7 +221,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>JeruPath</h3>
-                    <p>Your guide to Jerusalem's holy sites</p>
+                    <p>Your trusted guide to Jerusalem's holy sites.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
@@ -197,23 +230,46 @@
                         <li><a href="holy-sites.html">Holy Sites</a></li>
                         <li><a href="packages.html">Packages</a></li>
                         <li><a href="guide.html">Guide</a></li>
+                        <li><a href="videos.html">Videos</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <ul>
-                        <li>Email: info@JeruPath.com</li>
-                        <li>Phone: +972 2 123 4567</li>
+                        <li>Email: info@jerupath.com</li>
+                        <li>Phone: +972 2 3803045</li>
+                        <li>Address: Jerusalem, Israel</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 JeruPath. All rights reserved.</p>
+                <p>&copy; <span id="year"></span>2025 JeruPath. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="cart.js"></script>
+    <script>
+        // Mobile menu functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const navOverlay = document.querySelector('.nav-overlay');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+        });
+
+        navOverlay.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            navOverlay.classList.remove('active');
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html> 

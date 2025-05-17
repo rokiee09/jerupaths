@@ -3,29 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PilgrimPass - Walk your path in Jerusalem</title>
+    <title>JeruPath – Your Ultimate Jerusalem Travel Guide | Holy Sites, Tips & Maps</title>
+    <meta name="description" content="Discover Jerusalem with JeruPath – a multilingual travel guide covering sacred places, prayer times, transport tips, cultural etiquette and more. Available as downloadable PDF.">
+    <meta name="keywords" content="jerusalem travel guide, jerusalem brochure, jerupath pdf, holy city guide, jerusalem holy sites, jewish pilgrimage jerusalem, christian tour jerusalem, muslim sites jerusalem, public transport jerusalem, airport transfer jerusalem, how to get to jerusalem, prayer times jerusalem, mosque church synagogue jerusalem, where to eat in jerusalem, best hotels in jerusalem, jerusalem shopping, hebrew for tourists, what to wear in jerusalem, jerusalem safety tips">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="JeruPath – Your Ultimate Jerusalem Travel Guide">
+    <meta property="og:description" content="Discover Jerusalem with JeruPath – a multilingual travel guide covering sacred places, prayer times, transport tips, cultural etiquette and more. Available as downloadable PDF.">
+    <meta property="og:image" content="https://jerupath.com/images/og-image.jpg">
+    <meta property="og:url" content="https://jerupath.com/">
+    <meta property="og:type" content="website">
+    <!-- Structured Data Example -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristAttraction",
+      "name": "Western Wall",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jerusalem",
+        "addressCountry": "IL"
+      },
+      "image": "https://jerupath.com/images/western-wall.jpg"
+    }
+    </script>
+    <!-- Google Analytics (placeholder) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXXXX-X');
+    </script> -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="container">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.svg" alt="PilgrimPass Logo">
-                    JeruPath
-                </a>
-                <button class="mobile-menu-btn">☰</button>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="holy-sites.html">Holy Sites</a></li>
-                    <li><a href="packages.html">Packages</a></li>
-                    <li><a href="guide.html">Guide</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                </ul>
+          <div class="container">
+            <a href="index.html" class="logo">
+              <img src="images/logo.svg" alt="PilgrimPass Logo">
+              JeruPath
+            </a>
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
+            <ul class="nav-links">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="holy-sites.html">Holy Sites</a></li>
+              <li><a href="packages.html">Packages</a></li>
+              <li><a href="guide.html">Guide</a></li>
+              <li><a href="videos.html">Videos</a></li>
+            </ul>
+            <div class="nav-overlay"></div>
+          </div>
         </nav>
-    </header>
+      </header>
 
     <main>
         <section class="hero">
@@ -33,7 +69,7 @@
                 <h1>Discover Jerusalem's Holy Sites</h1>
                 <p>Your trusted guide to exploring the spiritual heart of three major religions. Experience the rich history, culture, and significance of Jerusalem's most sacred places.</p>
                 <div class="cta-buttons">
-                    <a href="guide.html" class="btn btn-primary">Get Smart Guide</a>
+                    <a href="packages.html" class="btn btn-primary">Get Smart Package</a>
                     <a href="videos.html" class="btn btn-secondary">Watch Video Guides</a>
                 </div>
             </div>
@@ -45,18 +81,23 @@
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon">📱</div>
-                        <h3>Smart Guide</h3>
-                        <p>Access detailed information about holy sites, prayer times, and visitor guidelines all in one place.</p>
+                        <h3>Smart Travel Guide</h3>
+                        <p>Plan your visit to Jerusalem with confidence.<br>
+                        Our digital brochure provides detailed insights into sacred sites, visitor dress codes, transport, and local tips — designed to support all faith-based or cultural travelers.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">🎥</div>
-                        <h3>Video Guides</h3>
-                        <p>Watch educational videos to prepare for your visit and understand the significance of each site.</p>
+                        <h3>Faith Video Guides <span class="coming-soon">(Coming Soon)</span></h3>
+                        <p>Experience Jerusalem through faith-focused video content.<br>
+                        Our upcoming video section will feature short, insightful clips on sacred sites and cultural tips. Until then, explore our expertly written guides for clear, respectful advice.</p>
+                        <p class="note">📝 All current guidance is based on our verified digital brochures.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🕒</div>
-                        <h3>Live Prayer Times</h3>
-                        <p>Stay updated with accurate prayer times for all locations in Jerusalem.</p>
+                        <div class="feature-icon">📢</div>
+                        <h3>Announcement</h3>
+                        <p><b>Campaigns (Coming Soon)</b><br>
+                        Special hotel and guide campaigns are coming soon for full brochure purchases!<br>
+                        Stay tuned to take advantage of these offers.</p>
                     </div>
                 </div>
             </div>
@@ -67,7 +108,7 @@
                 <h2>Popular Guides</h2>
                 <div class="guides-grid">
                     <div class="guide-card">
-                        <img src="images/al-aqsa.jpg" alt="Al-Aqsa Mosque" data-src="images/al-aqsa.jpg">
+                        <img src="images/al-aqsa.jpg" alt="Al-Aqsa Mosque in Jerusalem - Islamic holy site" loading="lazy">
                         <div class="guide-content">
                             <h3>Al-Aqsa Mosque</h3>
                             <p>Discover the third holiest site in Islam, its history, and visiting guidelines.</p>
@@ -75,7 +116,7 @@
                         </div>
                     </div>
                     <div class="guide-card">
-                        <img src="images/holy-sepulchre.jpg" alt="Church of the Holy Sepulchre" data-src="images/holy-sepulchre.jpg">
+                        <img src="images/holy-sepulchre.jpg" alt="Church of the Holy Sepulchre in Jerusalem - Christian pilgrimage site" loading="lazy">
                         <div class="guide-content">
                             <h3>Church of the Holy Sepulchre</h3>
                             <p>Explore Christianity's most sacred site and its significance.</p>
@@ -83,7 +124,7 @@
                         </div>
                     </div>
                     <div class="guide-card">
-                        <img src="images/western-wall.jpg" alt="Western Wall" data-src="images/western-wall.jpg">
+                        <img src="images/western-wall.jpg" alt="Western Wall in Jerusalem - Jewish pilgrimage site" loading="lazy">
                         <div class="guide-content">
                             <h3>Western Wall</h3>
                             <p>Learn about Judaism's holiest prayer site and its importance.</p>
@@ -115,8 +156,8 @@
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <ul>
-                        <li>Email: info@JeruPath.com</li>
-                        <li>Phone: +972 2-123-4567</li>
+                        <li>Email: info@jerupath.com</li>
+                        <li>Phone: +972 2 3803045</li>
                         <li>Address: Jerusalem, Israel</li>
                     </ul>
                 </div>
@@ -130,3 +171,63 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+<style>
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+.feature-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(44, 44, 84, 0.07);
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 320px;
+}
+.feature-icon {
+    font-size: 2.7rem;
+    margin-bottom: 1.2rem;
+}
+.feature-card h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin-bottom: 1.1rem;
+    color: #23234a;
+}
+.feature-card .coming-soon {
+    font-size: 1rem;
+    color: #D4AF37;
+    font-weight: normal;
+    margin-left: 0.3rem;
+}
+.feature-card p {
+    color: #23234a;
+    font-size: 1.08rem;
+    line-height: 1.6;
+    margin-bottom: 0.7rem;
+}
+.feature-card .note {
+    font-size: 0.98rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 0.7rem;
+}
+@media (max-width: 900px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .feature-card {
+        min-height: 0;
+        padding: 2rem 1rem 1.5rem 1rem;
+    }
+}
+</style>
